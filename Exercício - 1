@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        float media = 0;
+
+        for(int i = 1; i <= 3; i++){
+            System.out.println("Digite a nota n°"+i+": ");
+            float nota = scan.nextFloat();
+            media += nota;
+        }
+        System.out.printf("A media das 3 notas é: %.2f", (media / 3));
+    }
+}
